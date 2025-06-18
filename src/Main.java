@@ -5,18 +5,13 @@ public class Main {
         List<String> listFruits = new ArrayList<>();
         Set<String> fruits = new HashSet<>();
 
-        listFruits.add("Apple");
-        listFruits.add("Apple");
 
         fruits.add("Apple");
-        fruits.add("Apple");
+        fruits.add("Banana");
 
-        for (String listFruit: listFruits) {
-            System.out.println(listFruit);
-        }
 
         for (String fruit:fruits) {
-            System.out.println(fruit);
+            System.out.println(fruit.hashCode());
         }
     }
 }
