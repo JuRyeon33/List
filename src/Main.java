@@ -12,21 +12,13 @@ public class Main {
         fruits.add("Dragonfruit");
         fruits.add("Mango");
 
-        //fruits.remove("Banana");
-        fruits.remove(1);
+        //int index = fruits.indexOf("Banana");
+        //fruits.set(1, "Orange");
+        List<String> subList = fruits.subList(0, 2);
 
-       // for(int i = 0; i < fruits.size(); i++) {
-        //    System.out.println(fruits.get(i));
-        //}
-
-        Collections.sort(fruits);
-
-        for (String fruit : fruits) {
-            System.out.println(fruit);
+        for (int i = 0; i < subList.size(); i++) {
+            System.out.println(subList.get(i));
         }
 
-        if (fruits.contains("Apple")) {
-            System.out.println("Apple이 목록에 있습니다.");
-        }
     }
 }
