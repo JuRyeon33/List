@@ -1,24 +1,22 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> fruits = new ArrayList<>();
+        List<String> listFruits = new ArrayList<>();
+        Set<String> fruits = new HashSet<>();
+
+        listFruits.add("Apple");
+        listFruits.add("Apple");
 
         fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Cherry");
-        fruits.add("Dragonfruit");
-        fruits.add("Mango");
+        fruits.add("Apple");
 
-        //int index = fruits.indexOf("Banana");
-        //fruits.set(1, "Orange");
-        List<String> subList = fruits.subList(0, 2);
-
-        for (int i = 0; i < subList.size(); i++) {
-            System.out.println(subList.get(i));
+        for (String listFruit: listFruits) {
+            System.out.println(listFruit);
         }
 
+        for (String fruit:fruits) {
+            System.out.println(fruit);
+        }
     }
 }
